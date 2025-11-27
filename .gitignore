@@ -1,2 +1,6 @@
-artifacts/strucutre_data/
-*.csv*.csv
+# Ignore large CSV files
+/artifacts/row_data/structure_data/fashion-mnist_train.csv
+/artifacts/row_data/structure_data/fashion-mnist_test.csv
+
+# Ignore model files
+*.pkl
