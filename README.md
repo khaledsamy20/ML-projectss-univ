@@ -19,7 +19,7 @@ Below is a summary of the models implemented in this project, following the spec
     *   **Size of Each Sample:** 28x28 pixel grayscale images.
 
 *   **b. Implementation Details:**
-    *   **Feature Extraction:** The initial 784 pixel values were transformed using **Histogram of Oriented Gradients (HOG)** to extract important features. Outliers in the HOG features were then capped using the IQR method. The features were then scaled using `StandardScaler`. Dimensionality was then reduced to **180 principal components** using PCA.
+    *   **Feature Extraction:** The initial 784 pixel values were transformed using **Histogram of Oriented Gradients (HOG)** to extract important features. The features were then scaled using `StandardScaler`. Dimensionality was then reduced to **180 principal components** using PCA.
     *   **Cross-validation:** Yes, **5-fold cross-validation** was performed on the training data.
     *   **Hyperparameters:**
         *   **Model:** A `Pipeline` combining `StandardScaler`, `PCA`, and `LogisticRegression`.
